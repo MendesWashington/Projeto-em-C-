@@ -1,0 +1,470 @@
+#include <iostream>
+using namespace std;
+int main(){ 
+   	int i,a,c,d,b,menu;
+	printf("\n\n---- Escolha as opcoes que mais se adequam a finalidade do seu analisador: -----\n");
+	printf("\n1. Para gas\n");
+	printf("2. Para liquido\n");
+	printf("3. Determinacao qualitativa e quantitativa de vários componentes de uma amostra\n");
+	printf("\nEscolha uma opcao: ");
+	scanf("%d", &i);
+   	switch(i){
+      		case 1:
+      		system("cls");
+        	printf("\n\n---- Escolha as opcoes que mais se adequam a finalidade do seu analisador: -----\n\n");
+			printf("1. Controle da combustao\n");
+			printf("2. Fins analiticos\n");
+			printf("3. Analise do Hidrogenio\n");
+			printf("4. Analise de Gases Industriais\n");
+			printf("\nEscolha uma opcao: ");
+			scanf("%d", &a);
+			switch(a){
+    		case 1:
+			system("cls");
+			printf("\n\n---- Escolha as opcoes que mais se adequam a finalidade do seu analisador: -----\n\n");
+			printf("1. Preferencial no controle da combustao\n");
+			printf("2. Extracao\n");
+			printf("3. Seguranca do trabalho\n");
+			printf("4. Medicao do oxigenio\n");	
+			printf("\nEscolha uma opcao: ");
+			scanf("%d", &c);
+			switch(c){
+		case 1:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de gas de oxigenio com celula de oxido de zirconio\n\n");
+			printf("1. Aplicacoes: \n");
+			printf("Controle da combustao\n");
+			printf("Controle da pureza do oxigenio industrial e hospitalar\n");
+			printf("Processos siderurgicos e de oxidacao geral\n");
+			printf("Manuntencao de atmosferas inertes\n");
+			printf("\n2. Ideal para: \nOperacao em proporcoes estequiometricas, ou pelo menos, na pratica, condicoes proximas. \nGases de combustao com pequeno excesso de oxigenio, algo como 1 a 3%.\n");
+			printf("\n3. Desvantagens: \nNao podem ser aplicados quando a elevada temperatura de operacao da celula for incompativel com o processo;\nQualquer produto combustivel queimara em contato com a celula, consumindo uma parte do oxigenio presente.\n");
+			printf("\n4. Vantagens: \nExistem sensores exclusivos para sua medicao.\n");
+			printf("\n5. Vida util: \n3 anos \n");
+			printf("\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+		break;
+		case 2:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Gas de Oxigenio Paramagneticos\n\n");
+			printf("1. Aplicacoes: \n-Controle da combustao;\n-Controle da pureza do oxigenio industrial e hospitalar;\n-Processos siderurgicos e de oxidacao em geral;\n-Manutencao de atmosferas inertes;\n-Mais usado para Extracao\n");
+			printf("\n2. Ideal para: \n-Operacao em proporcoes estequiometricas, ou pelo menos, na pratica, condicoes proximas. \nGases de combustao com pequeno excesso de oxigenio, algo como 1 a 3%.\n");
+			printf("\n3. Desvantagem:\n-Requerem um eficiente condicionamento da amostra \n");
+			printf("\n4. Vantagem: \n-Podem ser usados para medicao de oxigenio em qualquer nivel entre 0 a 100 porcento em gases ou misturas gasosas\n");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+		break;
+		case 3:
+		case 4:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Gas de Oxigenio com celulas eletroquimicas de membrana\n");
+			printf("\n1. Aplicacoes:\n-Na seguranca do trabalho;\n-Medicao do oxigenio dissolvido na agua,em nivel de p.p.m., no tratamento dos efluente liquidos;\n-Medicao, em nivel de p.p.b, na saida de desaeradores de agua de alimentacao de caldeiras.");
+			printf("\n\n2. Ideal para:\n-Operacao em proporcoes estequiometricas, ou pelo menos, na pratica, condicoes proximas. \nGases de combustao com pequeno excesso de oxigenio, algo como 1 a 3%.");
+			printf("\n\n3. Vantagens:\n-Custo relativamente baixo;\n-Circuitos bastante simples;\n-Podem ser usados para medir o teor de oxigenio na atmosfera, em locais \nconfinados ou em mistura com outros gases nao muito reativos;\n-Existem sensores exclusivos para sua medicao.");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+		break;
+		default:
+        	do{
+				system("cls");
+				printf("\n Opcao invalida\n");
+				printf("\n Digite 1 para voltar ao menu ");	
+				scanf("%d",&menu);				
+				}while(menu!=1);
+    		do{
+    			system("cls");
+    			return main();
+   			}while(menu==1); 	
+			
+		}
+			break;
+			case 2:
+			system("cls");
+			printf("\n\n---- Escolha as opcoes que mais se adequam a finalidade do seu analisador: -----\n\n");
+			printf("1. Extrativos e operam com condicionamento da amostra\n");
+			printf("2. Mapeamento de poluentes atmosfericos\n");
+			printf("3. Refinamento de 'petroleamento' da amostra\n");
+			printf("4. Analise de diversos compostos em uma amostra\n");	
+			printf("\nEscolha uma opcao: ");
+			scanf("%d", &d);
+			switch(d){
+		case 1:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Gas para absorcao de radiacao infravermelho \n\n");
+			printf("1. Aplicacoes: \n");
+			printf("\n-Usado para fins analiticos, são extrativos e operam com condicionamento da amostra.\n");
+			printf("\n2. Desvantagens: \n-Exigem recursos mais sofisticados. \n");
+			printf("\n3. Vantagens: \nFacilita processos de separacao de gases, evitando o uso de outros instrumentos;\n-Indica instantaneamente todos os gases em seu display, devido a alta sensibilidade.\n");
+			printf("\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+		break;
+		case 2:
+		case 3:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Gas para absorcao de radiação FTIR e FTNIR\n\n");
+			printf("1. Aplicacoes: Usado para fins analiticos, mapeamento de poluentes e na area de \nrefinamento de petroleo.\n");
+			printf("\n2. Desvantagens: \n-Complexo e a obtencao do resultado e trabalhosa e demorada; \n-Nem sempre o modelo adotado fornece resultados corretos em todas as condicoes do processo.\n");
+			printf("\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+				if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+				do{
+				system("cls");
+				return main();
+			}while(menu==1);
+		break;
+		case 4:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Cromatografo a gas\n\n");
+			printf("\n1. Aplicacao:\n-Instrumento analitico que permite a analise de diversos compostos em uma amostra.\n");
+			printf("\n2. Vantagem:\n-Um unico cromatografo pode analisar sucessivamente amostras provenientes de varios pontos do processo, \nfavorecendo sua relacao custo/beneficio.");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+				if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+				do{
+				system("cls");
+				return main();
+			}while(menu==1);
+		break;
+		default:
+        	do{
+				system("cls");
+				printf("\n Opcao invalida\n");
+				printf("\n Digite 1 para voltar ao menu ");	
+				scanf("%d",&menu);				
+				}while(menu!=1);
+    		do{
+    			system("cls");
+    			return main();
+   			}while(menu==1); 	
+			
+		}
+			break;
+			case 3:
+			case 4:
+			system("cls");
+			printf("\n\nAnalisador indicado: Analisador de Gas para condutividade termica\n");
+			printf("\n1. Aplicacoes: \n-Analise do hidrogenio;\n-Analise de gases industriais;\n-Detectores na saida de colunas cromatograficas.");
+			printf("\n\n2. Vantagens: \n-Grande velocidade de resposta e de facil adaptacao no controle e supervisionamento de processos.\n-Baixo custo do equipamento.");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+			default:
+        	do{
+				system("cls");
+				printf("\n Opcao invalida\n");
+				printf("\n Digite 1 para voltar ao menu ");	
+				scanf("%d",&menu);				
+				}while(menu!=1);
+    		do{
+    			system("cls");
+    			return main();
+   			}while(menu==1); 		
+}
+			break;
+         	case 2:
+         	system("cls");
+         	printf("\n\n---- Escolha as opcoes que mais se adequam a finalidade do seu analisador: -----\n\n");
+			printf("1. Monitorar, analisar e controlar o PH das solucoes aquosas\n");
+			printf("2. Fins analiticos\n");
+			printf("3. Medicao do teor de fluor\n");
+			printf("4. Branqueamento (oxidacao) de materiais \n");
+			printf("5. Medicao e/ou controle de concentracoes\n");
+			printf("6. Monitoramento da pureza da agua tratada \n");
+			printf("7. Tratamento de efluentes \n");
+			printf("8. Monitoramento e controle do cloro \n");
+			printf("9. Autoanalisador \n");
+			printf("\nEscolha uma opcao: ");
+			scanf("%d", &b);
+			switch(b){
+    	case 1:
+    		system("cls");
+    		printf("\n\nAnalisador Indicado: Analisador de Liquido Para PH\n\n");
+			printf("1. Aplicacao: \n");
+			printf("-Monitorar, analisar e controlar o pH das soluções aquosas\n");
+			printf("\n2. Ideal para: \n-Empresas de tratamento e distribuição de agua;\n");
+			printf("\n3.Desvantagens:\n-Facilidade com que os eletrodos sao afetados pela sujeira oriunda do processo;\n-Nao efetua medicao do pH em efluentes contendo teores elevados de oleo em emulsao.\n");
+			printf("\n4.Vantagens:\n-Resistente e de alta durabilidade, suporta temperaturas ambiente, bem como uma umidade relativa elevada;\n-Custo-beneficio: alem de ser comercializado a precos acessiveis, os valores de operacao e manutencao do\nmedidor de pH industrial sao baixos.");
+            printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		case 2:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Cromatografo a liquido\n\n");
+			printf("\n1. Aplicacoes:\n-Instrumento analitico que permite analises e separacoes de uma ampla gama de compostos com alta eficiencia;\n");
+			printf("-Utilizado em varias areas da ciencia,no acompanhamento de sinteses, em analises de pesticidas, \nferomonios, no isolamento de produtos naturais e, sinteticos e na producao e controle de\nqualidade de medicamentos, dentre outras aplicacoes.");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		case 3:
+			system("cls");	
+			printf("\n\nAnalisador Indicado: Analisador de Liquido Para Ions Seletivos\n\n");
+			printf("\n1.Aplicacoes:\n-Medicao do teor de fluor em instalacoes de fluoretacao de agua potavel e de sodio em agua\n");
+			printf("\n2.Desvantagem: \n-Complexidade e custo relativamente elevado.\n");
+			printf("\n3.Vantagem: \n-Importante em usinas nucleares e na proteção das palhetas das turbinas a vapor.\n");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		case 4:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Liquido Potencial Redox\n\n");
+			printf("\n1.Aplicacoes:\n-Branqueamento (oxidacao) de materiais;\n-Redução dos cromatos e a oxidacao dos cianetos, no tratamento de efluentes liquidos.\n");
+			printf("\n2.Ideal para: \n-Controle da adição do reagente.\n");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		case 5:
+		case 6:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Liquido para Condutividade Eletrica\n\n");
+			printf("\n1.Aplicacoes:\n-Processo: Medicao, controle de concentracoes, controle da lavagem de materiais e neutralização;\n");
+			printf("\n-Utilidades: Monitoracao da pureza da agua tratada, verificacao da contaminacao em linhas de retomo de condensado; \n");
+			printf("-Medicao de niveis muito baixos de oxigenio dissolvido na agua.\n");
+			printf("\n2.Vantagens:\n-E capaz de fazer uma medicao de amostragem em menos de um segundo;\n-Equipamentos de baixo custo de aquisicao;\n-Instalacao e manutencao e de elevada confiabilidade.");
+			printf("\n\n3.Desvantagens:\n-Nao e possivel distinguir entre diferentes tipos de ions;\n-Sao dependentes da temperatura\n");
+			printf("-Nao mede o numero de ions em uma solucao diretamente.\n");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		case 7:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Liquido para Turbidimetros\n\n");
+			printf("\n1.Aplicacoes:\n-Tratamento de efluentes\n");
+			printf("\n2.Ideal para:\n-Tratamento da agua potavel, e tambem na industria de bebidas.\n-Muito empregado em industrias e em centros de pesquisas;");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		case 8:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Analisador de Liquido para Cloro \n\n");
+			printf("\n1.Aplicacoes:\n-Utilizado para monitorar e controlar o cloro livre e residual em aguas potaveis, agua \ndo mar, em piscinas e na industria de alimentos, o analisador de cloro e empregado em \ncentros de pesquisas e em empresas de tratamento e distribuicao de agua;\n\n");
+			printf("2.Ideal para: \n-Centros de pesquisas e em empresas de tratamento e distribuicao de agua");
+			printf("\n\n3.Vantagem:\n-Ajuda a manter sob controle a proliferacao de bacterias, simultaneamente evitando reacoes\n");
+			printf("indesejadas tipicas do excesso de cloro na agua, como irritacao da pele e dos olhos\ne outros perigos para a saude");
+			printf("\n\n4.Desvantagem:\n-Cloro residual total: maior custo, operacao requer um suprimento de reagente apropriado.\n");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		case 9:
+			system("cls");
+			printf("\n\nAnalisador Indicado: Autoanalisador de Liquido Silicometros \n\n");
+			printf("\n1.Aplicacoes:\n-Autoanalisador\n\n");
+			printf("2.Ideal para: \n-Monitoramento do teor de silica na agua de alimentacao das caldeiras");
+			printf("\n\n3.Vantagem:\n-Efetua analise continua da amostra\n");
+			printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE 1 PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		default:
+        	do{
+				system("cls");
+				printf("\n Opcao invalida\n");
+				printf("\n Digite 1 para voltar ao menu ");	
+				scanf("%d",&menu);				
+				}while(menu!=1);
+    		do{
+    			system("cls");
+    			return main();
+   			}while(menu==1);
+   		}
+           	break;
+           	case 3:
+           		system("cls");
+           		printf("\n\n Analisador Indicado: Espectros de Massa \n\n");
+           		printf("1. Aplicacao:\n-Permite a determinacao qualitativa e quantitativa de varios componentes de uma amostra.\nSimilar ao cromatografo mas ao contrario destes, seu ciclo de analise e da ordem de segundos. \n-Aplica-se na area petroquimica\n");
+        		printf("\n2. Ideal para:\n-Analise de hidrocarbonetos em plantas petroquimicas, onde um espectrometro de massa \npode substituir muitos cromatografos;\n-Analise da composicao e da pureza de gases e misturas gasosas em plantas de separacao \nde ar e usinas siderurgicas;\n"); 
+				printf("-Controle de processos de fermentacao pela analise dos gases neles gerados;\n-Na seguranca do trabalho monitorando o ar em muitos pontos da planta para a deteccao.");
+				printf("\n\nPara voltar ao menu digite 1: ");
+			scanf("%d", &menu);
+			if(menu==1){
+			system("cls");
+			return main();	
+			}else 
+			system("cls");
+			printf("\nOpcao Invalida\n");
+			printf("\nDIGITE QUALQUER NUMERO PARA CONTINUAR: \n");
+			scanf("%d", &menu);
+			do{
+				system("cls");
+				return main();
+			}while(menu==1);
+			break;
+		default:
+        	do{
+				system("cls");
+				printf("\n Opcao invalida\n");
+				printf("\n Digite 1 para voltar ao menu ");	
+				scanf("%d",&menu);				
+				}while(menu!=1);
+    		do{
+    			system("cls");
+    			return main();
+   			}while(menu==1);
+   		}
+}
+
